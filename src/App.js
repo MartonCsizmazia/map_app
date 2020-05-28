@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,6 +8,10 @@ const api = {
 }
 
 function App() {
+
+    const [query, setQuery] = useState('');
+    const [weather, setWeather] = useState({});
+
 
     const dateBuilder = (d) => {
         let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
