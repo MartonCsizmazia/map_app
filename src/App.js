@@ -22,7 +22,7 @@ function App() {
                     console.log(result);
                 });
         }
-    }
+    };
 
 
     const dateBuilder = (d) => {
@@ -45,7 +45,9 @@ function App() {
                   type="text"
                   className="search-bar"
                   placeholder="Search..."
-
+                  onChange={e => setQuery(e.target.value)}
+                  value={query}
+                  onKeyPress={search}
               />
             </div>
 
