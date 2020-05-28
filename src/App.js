@@ -9,9 +9,19 @@ const api = {
 
 function App() {
 
+    const dateBuilder = (d) => {
+        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+        let day = days[d.getDay()];
+        let date = d.getDate();
+        let month = months[d.getMonth()];
+        let year = d.getFullYear();
 
-  return (
+        return `${day} ${date} ${month} ${year}`
+    }
+
+    return (
     <div className="app warm">
         <main>
           <div className="search-box">
@@ -27,7 +37,7 @@ function App() {
           </div>
         </main>
     </div>
-  );
+    );
 }
 
 export default App;
