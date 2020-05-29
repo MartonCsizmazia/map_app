@@ -12,14 +12,26 @@ body {
 }
 
 .app{
-  background-image: url('assets/cold.jpg');
+  background-image: url('assets/cold-night.jpg');
   background-size: cover ;
   background-position: bottom;
   transition: 0.4s ease-out;
 }
 
 .app.warm{
-  background-image: url('assets/warm.jpg')
+  background-image: url('assets/warm-day.jpg')
+}
+
+.app.warm.day{
+  background-image: url('assets/warm-day.jpg')
+}
+
+.app.warm.night{
+  background-image: url('assets/warm-night.jpg')
+}
+
+.app.cold.day{
+  background-image: url('assets/cold-day.jpg')
 }
 
 main{
